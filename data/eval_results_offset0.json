@@ -1,0 +1,148 @@
+{
+  "total": 20,
+  "correct": 0,
+  "refused": 19,
+  "wrong": 1,
+  "results": [
+    {
+      "question": "Which year and which conference was the 14th season for this conference as part of the NCAA Division that the Colorado Buffaloes played in with a record of 2-6 in conference play?",
+      "expected": "2009 Big 12 Conference",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "In 1991 Euromarch\u00e9 was bought by a chain that operated how any hypermarkets at the end of 2016?",
+      "expected": "1,462",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "What race track in the midwest hosts a 500 mile race eavery May?",
+      "expected": "Indianapolis Motor Speedway",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "In what city did the \"Prince of tenors\" star in a film based on an opera by Giacomo Puccini?",
+      "expected": "Rome",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "Ellie Goulding worked with what other writers on her third studio album, Delirium?",
+      "expected": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "Which Australian city founded in 1838 contains a boarding school opened by a Prime Minister of Australia and named after a school in London of the same name.",
+      "expected": "Marion, South Australia",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "D1NZ is a series based on what oversteering technique?",
+      "expected": "Drifting",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "who is younger Keith Bostic or Jerry Glanville ?",
+      "expected": "Keith Bostic",
+      "generated": "I\u2019m sorry, but I don\u2019t have enough information to provide their birth dates or determine who is younger.",
+      "verdict": "WRONG / UNVERIFIED",
+      "retries": 3
+    },
+    {
+      "question": "According to the 2001 census, what was the population of the city in which Kirton End is located?",
+      "expected": "35,124",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nThe provided information does not include the 2001 UK census population for Boston, Lincolnshire (including Kirton End).\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 4
+    },
+    {
+      "question": "Are both Cypress and Ajuga genera?",
+      "expected": "no",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nThe provided information does not contain enough detail to determine whether \u201cCypress\u201d and \u201cAjuga\u201d are recognized as valid botanical genera in modern plant taxonomy.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 4
+    },
+    {
+      "question": "What distinction is held by the former NBA player who was a member of the Charlotte Hornets during their 1992-93 season and was head coach for the WNBA team Charlotte Sting?",
+      "expected": "shortest player ever to play in the National Basketball Association",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nT.R.\u202fDunn.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 4
+    },
+    {
+      "question": "What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?",
+      "expected": "Ronald Shusett",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "Who was born earlier, Emma Bull or Virginia Woolf?",
+      "expected": "Adeline Virginia Woolf",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to determine which author was born earlier or to provide their exact birth dates.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "What was the Roud Folk Song Index of the nursery rhyme inspiring What Are Little Girls Made Of?",
+      "expected": "821",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ?",
+      "expected": "more than 70 countries",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "What WB supernatrual drama series was Jawbreaker star Rose Mcgowan best known for being in?",
+      "expected": "Charmed",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "Vince Phillips held a junior welterweight title by an organization recognized by what larger Hall of Fame?",
+      "expected": "International Boxing Hall of Fame",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "What is the name of the singer who's song was released as the lead single from the album \"Confessions\", and that had popular song stuck behind for eight consecutive weeks?",
+      "expected": "Usher",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "who is the younger brother of The episode guest stars of The Hard Easy",
+      "expected": "Bill Murray",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "The 2017\u201318 Wigan Athletic F.C. season will be a year in which the team competes in the league cup known as what for sponsorship reasons?",
+      "expected": "Carabao Cup",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    }
+  ]
+}

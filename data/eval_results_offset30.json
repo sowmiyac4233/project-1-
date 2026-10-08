@@ -1,0 +1,148 @@
+{
+  "total": 20,
+  "correct": 11,
+  "refused": 4,
+  "wrong": 5,
+  "results": [
+    {
+      "question": "When was Poison's album \"Shut Up, Make Love\" released?",
+      "expected": "2000",
+      "generated": "Poison\u2019s song \u201cShut Up, Make Love\u201d appears on the album\u202f*Crack a Smile\u2026and More!*, which was released on March\u202f14\u202f2000. No separate Poison album titled \u201cShut Up, Make Love\u201d is mentioned in the provided information.",
+      "verdict": "CORRECT",
+      "retries": 0
+    },
+    {
+      "question": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+      "expected": "Fujioka, Gunma",
+      "generated": "Buck\u2011Tick originated in Fujioka, Gunma, Japan.",
+      "verdict": "CORRECT",
+      "retries": 0
+    },
+    {
+      "question": "Which  French ace pilot and adventurer fly L'Oiseau Blanc",
+      "expected": "Charles Eug\u00e8ne",
+      "generated": "Charles\u202fNungesser.",
+      "verdict": "WRONG / UNVERIFIED",
+      "retries": 0
+    },
+    {
+      "question": "Are Freakonomics and In the Realm of the Hackers both American documentaries?",
+      "expected": "no",
+      "generated": "No.\u202fFreakonomics is an American documentary, while\u202fIn\u202fthe\u202fRealm\u202fof\u202fthe\u202fHackers is an Australian documentary.",
+      "verdict": "CORRECT",
+      "retries": 0
+    },
+    {
+      "question": "Which band, Letters to Cleo or Screaming Trees, had more members?",
+      "expected": "Letters to Cleo",
+      "generated": "Letters to\u202fCleo had more members. Their lineup includes six individuals, while Screaming\u202fTrees is noted with five distinct members.",
+      "verdict": "CORRECT",
+      "retries": 0
+    },
+    {
+      "question": "Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ?",
+      "expected": "October 1922",
+      "generated": "The civil war ended in\u202f1922, when the Communist Reds emerged victorious.",
+      "verdict": "WRONG / UNVERIFIED",
+      "retries": 0
+    },
+    {
+      "question": "Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?",
+      "expected": "2000",
+      "generated": "He began working in France in\u202f2000.",
+      "verdict": "CORRECT",
+      "retries": 2
+    },
+    {
+      "question": "The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",
+      "expected": "World War II",
+      "generated": "World War\u202fII.",
+      "verdict": "CORRECT",
+      "retries": 1
+    },
+    {
+      "question": "Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?",
+      "expected": "no",
+      "generated": "No. Gerald\u202fR.\u202fFord International Airport is in Michigan, while Elko Regional Airport is in Nevada.",
+      "verdict": "CORRECT",
+      "retries": 0
+    },
+    {
+      "question": "Ralph Hefferline was a psychology professor at a university that is located in what city?",
+      "expected": "New York City",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nThe provided information does not specify the city where Columbia University is located.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?",
+      "expected": "Scotch Collie",
+      "generated": "The Scotch Collie.",
+      "verdict": "CORRECT",
+      "retries": 0
+    },
+    {
+      "question": "Where is the company that Sachin Warrier worked for as a software engineer headquartered?",
+      "expected": "Mumbai",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to determine the city and country of the company\u2019s headquarters.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year?",
+      "expected": "1962",
+      "generated": "1962",
+      "verdict": "CORRECT",
+      "retries": 0
+    },
+    {
+      "question": "The battle in which Giuseppe Arimondi lost his life secured what for Ethiopia?",
+      "expected": "sovereignty",
+      "generated": "It secured Ethiopia\u2019s sovereignty and its freedom from colonisation.",
+      "verdict": "CORRECT",
+      "retries": 0
+    },
+    {
+      "question": "Alfred Balk served as the secretary of the Committee on the Employment of Minority Groups in the News Media under which United States Vice President?",
+      "expected": "Nelson Rockefeller",
+      "generated": "The provided information does not specify the dates of Alfred\u202fBalk\u2019s service as secretary of that committee, so it cannot determine which U.S. Vice President was in office at that time.",
+      "verdict": "WRONG / UNVERIFIED",
+      "retries": 2
+    },
+    {
+      "question": "A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area?",
+      "expected": "Yellowcraig",
+      "generated": "The Firth of\u202fForth.",
+      "verdict": "WRONG / UNVERIFIED",
+      "retries": 1
+    },
+    {
+      "question": "Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?",
+      "expected": "Phil Spector",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "What type of forum did a former Soviet statesman initiate?",
+      "expected": "Organizations could come together to address global issues",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "Are Ferocactus and Silene both types of plant?",
+      "expected": "yes",
+      "generated": "Yes, both Ferocactus and Silene are genera of plants.",
+      "verdict": "CORRECT",
+      "retries": 0
+    },
+    {
+      "question": "Which British first-generation jet-powered medium bomber was used in the South West Pacific theatre of World War II?",
+      "expected": "English Electric Canberra",
+      "generated": "The provided information does not indicate that any British first\u2011generation jet\u2011powered medium bomber was used in the South West Pacific theatre of World\u202fWar\u202fII.",
+      "verdict": "WRONG / UNVERIFIED",
+      "retries": 0
+    }
+  ]
+}

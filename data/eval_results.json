@@ -1,0 +1,113 @@
+{
+  "total": 15,
+  "correct": 5,
+  "refused": 7,
+  "wrong": 3,
+  "results": [
+    {
+      "question": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+      "expected": "9,984",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to provide the most recent total population estimate for the United States.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+      "expected": "the North Atlantic Conference",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but the provided information doesn\u2019t include the name of the conference the team belonged to between 1988 and 1996.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+      "expected": "yes",
+      "generated": "Yes, both Giuseppe Verdi and Ambroise\u202fThomas were opera composers.",
+      "verdict": "CORRECT",
+      "retries": 0
+    },
+    {
+      "question": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+      "expected": "1969 until 1974",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nThe overlap occurred during President\u202fRichard\u202fNixon\u2019s administration, which spanned\u202f1969\u202fthrough\u202f1974.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+      "expected": "Robert Erskine Childers DSC",
+      "generated": "Robert Erskine\u202fChilders.",
+      "verdict": "WRONG / UNVERIFIED",
+      "retries": 0
+    },
+    {
+      "question": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+      "expected": "Pedro Rodr\u00edguez",
+      "generated": "Pedro\u202fRodr\u00edguez.",
+      "verdict": "CORRECT",
+      "retries": 1
+    },
+    {
+      "question": "This singer of A Rather Blustery Day also voiced what hedgehog?",
+      "expected": "Sonic",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nThe provided information does not indicate that Jim\u202fCummings voiced any hedgehog character.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with?",
+      "expected": "keyboard function keys",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nI\u2019m sorry, but I don\u2019t have enough information to answer that question.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice?",
+      "expected": "Badly Drawn Boy",
+      "generated": "Badly Drawn Boy has the higher instrument\u2011to\u2011person ratio. He is a solo act who \u201cplayed several instruments,\u201d giving more than one instrument per person, whereas Wolf\u202fAlice\u2019s four members collectively cover roughly one instrument each.",
+      "verdict": "CORRECT",
+      "retries": 0
+    },
+    {
+      "question": "What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+      "expected": "World's Best Goalkeeper",
+      "generated": "He was voted the IFFHS\u202fWorld\u2019s Best Goalkeeper in 1992.",
+      "verdict": "CORRECT",
+      "retries": 0
+    },
+    {
+      "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+      "expected": "Barton Lee Hazlewood",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nThe provided information does not indicate which songwriter died in 2007.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "The 2011\u201312 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?",
+      "expected": "1838",
+      "generated": "I wasn't able to find and verify strong enough evidence in the available documents to answer this confidently. Here's my best attempt based on what was retrieved:\n\nThe provided information does not include the year Virginia Commonwealth University was founded.\n\nTreat the above as provisional -- it did not pass the automated evidence-verification check.",
+      "verdict": "REFUSED (no hallucination)",
+      "retries": 3
+    },
+    {
+      "question": "Are both Dictyosperma, and Huernia described as a genus?",
+      "expected": "yes",
+      "generated": "Yes; both Dictyosperma and Huernia are described as genera.",
+      "verdict": "CORRECT",
+      "retries": 0
+    },
+    {
+      "question": "Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?",
+      "expected": "Henry J. Kaiser",
+      "generated": "I\u2019m sorry, but the provided information does not indicate who founded Kaiser\u202fVentures corporation, so I can\u2019t confirm that it was founded by the industrialist known as the father of modern American shipbuilding.",
+      "verdict": "WRONG / UNVERIFIED",
+      "retries": 0
+    },
+    {
+      "question": "What is the name for the adventure in \"Tunnels and Trolls\", a game designed by Ken St. Andre?",
+      "expected": "Arena of Khazan",
+      "generated": "Crusaders of Khazan.",
+      "verdict": "WRONG / UNVERIFIED",
+      "retries": 0
+    }
+  ]
+}
