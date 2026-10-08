@@ -1,100 +1,73 @@
 """
-Simple web UI for the Self-Corrective RAG pipeline, built with Streamlit.
+CLI entrypoint.
 
-Run with:
-    streamlit run streamlit_app.py
-
-This gives you a browser-based interface instead of the command line:
-- A text box to type a question
-- The final answer, clearly displayed
-- An expandable trace showing every step the pipeline took (retrieve,
-  grade, generate, hallucination check, answer check, retries)
-- Status indicators for whether the answer passed grounding/relevance checks
+    python app.py ingest --source data/sample_docs
+    python app.py ask "your question"
+    python app.py ask "your question" --trace
+    python app.py chat
 """
-import streamlit as st
+import typer
+from rich.console import Console
+from rich.panel import Panel
+from rich.markdown import Markdown
 
 from src.config import settings
-from src.graph import run
-from src.vectorstore import build_vectorstore
 from src.ingestion import load_and_chunk
+from src.vectorstore import build_vectorstore
+from src.graph import run
 
-st.set_page_config(page_title="Self-Corrective RAG", page_icon="🔎", layout="centered")
+app = typer.Typer(add_completion=False)
+console = Console()
 
-st.title("🔎 Self-Corrective RAG")
-st.caption(
-    "Hallucination-resistant question answering: every answer is graded for "
-    "evidence relevance, factual grounding, and whether it actually answers "
-    "your question -- before you see it."
-)
 
-# --- Sidebar: ingestion controls ---
-with st.sidebar:
-    st.header("Documents")
-    source_dir = st.text_input("Source folder", value="data/sample_docs")
-    if st.button("Re-ingest documents", use_container_width=True):
-        with st.spinner(f"Loading and embedding documents from {source_dir} ..."):
-            try:
-                settings.validate()
-                chunks = load_and_chunk(source_dir)
-                build_vectorstore(chunks)
-                st.success(f"Ingested {len(chunks)} chunk(s) from {source_dir}")
-            except Exception as exc:  # noqa: BLE001
-                st.error(f"Ingestion failed: {exc}")
+@app.command()
+def ingest(source: str = typer.Option("data/sample_docs", help="Folder of .txt/.md/.pdf files")):
+    """Load, chunk, embed, and persist documents into the vector store."""
+    settings.validate()
+    chunks = load_and_chunk(source)
+    build_vectorstore(chunks)
+    console.print(f"[green]Ingested and persisted {len(chunks)} chunks from {source}[/green]")
 
-    st.divider()
-    st.caption(f"LLM provider: **{settings.llm_provider}**")
-    st.caption(f"Generator model: **{settings.generator_model}**")
-    st.caption(f"Grader model: **{settings.grader_model}**")
-    st.caption(f"Retrieval k: **{settings.retrieval_k}**")
-    st.caption(f"Max retries: **{settings.max_retries}**")
 
-# --- Main: ask a question ---
-question = st.text_input("Ask a question about your documents", placeholder="e.g. What triggers the query rewrite step?")
-ask_clicked = st.button("Ask", type="primary")
+@app.command()
+def ask(
+    question: str,
+    trace: bool = typer.Option(False, "--trace", help="Print the full node-by-node execution trace"),
+):
+    """Ask a single question against the ingested corpus."""
+    settings.validate()
+    result = run(question)
+    console.print(Panel(Markdown(result["generation"]), title="Answer", border_style="cyan"))
 
-if ask_clicked and question.strip():
-    try:
-        settings.validate()
-    except Exception as exc:  # noqa: BLE001
-        st.error(str(exc))
-        st.stop()
-
-    with st.spinner("Running retrieval, grading, generation, and verification..."):
-        try:
-            result = run(question)
-        except Exception as exc:  # noqa: BLE001
-            st.error(f"Something went wrong: {exc}")
-            st.stop()
-
-    st.subheader("Answer")
-    st.markdown(result.get("generation", "(no answer generated)"))
-
-    # Status badges
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.metric("Retries used", result.get("retries", 0))
-    with col2:
-        grounded = result.get("hallucination_ok")
-        st.metric("Grounded in evidence", "✅ Yes" if grounded else ("❌ No" if grounded is False else "—"))
-    with col3:
-        answers = result.get("answers_question")
-        st.metric("Answers the question", "✅ Yes" if answers else ("❌ No" if answers is False else "—"))
-
-    if result.get("used_web_search"):
-        st.info("This answer was supplemented with web search results.")
-
-    with st.expander("Execution trace (step-by-step)"):
+    if trace:
+        console.print("\n[bold]Execution trace:[/bold]")
         for i, line in enumerate(result.get("trace", []), start=1):
-            st.text(f"{i}. {line}")
+            console.print(f"  {i}. {line}")
+        console.print(
+            f"\n[dim]retries={result.get('retries', 0)}  "
+            f"hallucination_ok={result.get('hallucination_ok')}  "
+            f"answers_question={result.get('answers_question')}  "
+            f"used_web_search={result.get('used_web_search')}[/dim]"
+        )
 
-    with st.expander("Retrieved / graded documents"):
-        docs = result.get("documents", [])
-        if not docs:
-            st.write("No documents were graded relevant for the final answer.")
-        for i, doc in enumerate(docs, start=1):
-            source = doc.metadata.get("source", "unknown")
-            st.markdown(f"**{i}. {source}**")
-            st.text(doc.page_content[:500] + ("..." if len(doc.page_content) > 500 else ""))
 
-elif ask_clicked:
-    st.warning("Please type a question first.")
+@app.command()
+def chat():
+    """Interactive loop -- ask multiple questions in one session."""
+    settings.validate()
+    console.print("[bold cyan]Self-Corrective RAG[/bold cyan] -- type 'exit' to quit.\n")
+    while True:
+        question = console.input("[bold]> [/bold]")
+        if question.strip().lower() in ("exit", "quit"):
+            break
+        result = run(question)
+        console.print(Panel(Markdown(result["generation"]), title="Answer", border_style="cyan"))
+        console.print(
+            f"[dim]retries={result.get('retries', 0)}  "
+            f"hallucination_ok={result.get('hallucination_ok')}  "
+            f"answers_question={result.get('answers_question')}[/dim]\n"
+        )
+
+
+if __name__ == "__main__":
+    app()
